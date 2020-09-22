@@ -15,8 +15,9 @@ namespace orai_09_22
             Console.WriteLine("Weinber Viktor");
             for (int i = 0; i < 100; i++)
             {
-                Console.SetCursorPosition(rnd.Next(Console.WindowHeight),
-                    rnd.Next(Console.WindowWidth));
+                Console.ForegroundColor = (ConsoleColor)rnd.Next(1, 16);
+                Console.SetCursorPosition(rnd.Next(Console.WindowWidth),
+                    rnd.Next(Console.WindowHeight));
                 Console.Write("*");
             }
             Console.ReadKey(true);
